@@ -1,0 +1,277 @@
+/* --------------------note Section Start ---------------------------- */
+
+.main-note-section{}
+.main-note-section .note-item-area{}
+.main-note-section .note-item-area .note-button{
+    border: none;
+    background: none;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    border-bottom: 3px solid #C8D8FB;
+    background: #FFC300;
+    padding: 15px 30px;
+    display: inline-block;
+    margin-right: 12px;
+}
+.main-note-section .note-item-area .active-note-button{
+    border-radius: 10px;
+border-bottom: 3px solid  #203864;
+background: #FFC300;
+}
+@media all and (max-width:480px) {
+    .main-note-section .note-item-area .note-button {
+      
+        font-size: 18px;
+       
+        padding: 15px 15px;
+      
+        margin-right: 0px;
+    }
+    .main-note-section .note-item-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media all and (max-width:359px) {
+    .main-note-section .note-item-area .note-button {
+        font-size: 16px;
+        padding: 11px 14px;
+        margin-right: 0px;
+    }
+
+}
+
+@media all and (max-width:320px) {
+    .main-note-section .note-item-area .note-button {
+        font-size: 15px;
+        padding: 10px 12px;
+        margin-right: 0px;
+    }
+
+}
+
+
+
+.note-details-box-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+    flex-wrap: wrap;
+}
+.note-details-box-area .note-box-item{
+    flex-basis: 23%;
+    padding: 15px;
+    border-radius: 20px;
+background: #F2F8FF;
+}
+.note-details-box-area .note-box-item .note-box-image{
+    position: relative;
+}
+.note-details-box-area .note-box-item .note-box-image .note-image{
+    height: auto;
+    width: 100%;
+}
+.note-details-box-area .note-box-item .note-box-image .dot-icon {
+	position: absolute;
+	top: 3px;
+	right: 4px;
+	cursor: pointer;
+}
+.note-details-box-area .note-box-item .note-box-details{}
+.note-details-box-area .note-box-item .note-box-details .note-heading-text{
+    color:  #364E79;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 10px 0px;
+}
+.note-details-box-area .note-box-item .note-box-details .details-text{
+    color: #8C90B6;
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+margin-bottom: 12px;
+}
+.note-details-box-area .note-box-item .note-box-details .assign-area{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.note-details-box-area .note-box-item .note-box-details .assign-area .assing-link{
+    display: inline-block;
+}
+.note-details-box-area .note-box-item .note-box-details .assign-area .assing-link .assing-image{}
+
+.note-details-box-area .note-box-item .note-box-details .assign-area .assign-text{
+    color:  #364E79;
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+margin: 0px;
+margin-left: 15px;
+}
+.cusotm-margin{
+    margin-left: -10px;
+  
+
+}
+
+
+@media all and (max-width:991px) {
+    .note-details-box-area .note-box-item{
+        flex-basis: 45%;
+        margin-bottom: 40px;
+      
+    }
+    .note-details-box-area .note-box-item .note-box-image .dot-icon {
+        position: absolute;
+        top: 11px;
+        right: 13px;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+    }
+}
+@media all and (max-width:576px) {
+    .note-details-box-area .note-box-item{
+        flex-basis: 95%;
+        margin-bottom: 40px;
+      
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1155px) {
+    .note-details-box-area .note-box-item {
+        flex-basis: 24%;
+        padding: 15px 10px;
+      
+    }
+    .note-details-box-area .note-box-item .note-box-details .note-heading-text {
+       
+        font-size: 14px;
+     
+        margin: 8px 0px;
+    }
+    .note-details-box-area .note-box-item .note-box-details .details-text {
+        
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+}
+/* --------------------note Section End ---------------------------- */
+
+/* *************************************************************** */
+/* *****************02-view-book pages start*********************** */
+/* *************************************************************** */
+
+/* --------------------Notepad Section Start ---------------------------- */
+.main-notepad-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-notepad-section .left-area{
+    flex-basis: 30%;
+}
+.main-notepad-section .left-area .left-header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-notepad-section .left-area .left-header-area .description-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background:  #FFC300;
+    padding: 15px 07px;
+    border: none;
+}
+.main-notepad-section .left-area .left-header-area .description-button .btn-text{ 
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+ 
+}
+.main-notepad-section .left-area .left-header-area .description-button .description-color{
+height: 22px;
+width: 22px;
+border-radius: 50%;
+background:    #EDDBFF;
+display: block;
+margin-right: 7px;
+}
+
+.main-notepad-section .left-area .left-description-item-area{
+    margin-top: 12px;
+}
+.main-notepad-section .left-area .left-description-item-area .left-description-item{
+
+}
+.main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button{
+    border-radius: 10px;
+border-bottom: 3px solid #FFE89F;
+background: #FFC300;
+padding: 17px;
+margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+.main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .icon{
+    margin-right: 10px;
+}
+.main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .note-text{
+    color: #FFF;
+font-family: Gilroy;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .study-notes-name{
+    color:  #364E79;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .note-date{
+    color: #A0A3BD;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.border-none{
+    border: none !important;
+}
+.main-notepad-section .right-area{
+    flex-basis: 70%;
+}
+/* --------------------Notepad Section End ---------------------------- */
+
