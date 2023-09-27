@@ -1,6 +1,10 @@
 /* --------------------note Section Start ---------------------------- */
-
-.main-note-section{}
+.main-note-section {}
+.main-note-section .flex-box-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .main-note-section .note-item-area{}
 .main-note-section .note-item-area .note-button{
     border: none;
@@ -18,24 +22,71 @@
     display: inline-block;
     margin-right: 12px;
 }
+.main-note-section .create-new-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-note-section .create-new-button .create-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--Primary-Y, #FFC300);
+    background: #314C80;
+    padding: 15px 30px;
+}
+.main-note-section .create-new-button .create-button span{
+    color: #FFF;
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 .main-note-section .note-item-area .active-note-button{
     border-radius: 10px;
 border-bottom: 3px solid  #203864;
 background: #FFC300;
 }
-@media all and (max-width:480px) {
+@media all and (max-width:767px) {
     .main-note-section .note-item-area .note-button {
       
-        font-size: 18px;
-       
-        padding: 15px 15px;
-      
-        margin-right: 0px;
+        padding: 10px 15px;
+   
+        margin-right: 12px;
     }
+    .main-note-section .create-new-button .create-button {
+ 
+        padding: 10px 15px;
+    }
+}
+@media all and (max-width:577px) {
+    .main-note-section .note-item-area .note-button {
+        padding: 10px 10px;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    .main-note-section .create-new-button .create-button {
+        padding: 10px 10px;
+    }
+}
+
+@media all and (max-width:480px) {
+
     .main-note-section .note-item-area {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .main-note-section .flex-box-one {
+        flex-direction: column;
+    }
+    .main-note-section .note-item-area .note-button {
+        font-size: 15px;
+        padding: 15px 15px;
+        margin-right: 0px;
+        margin: 10px 5px;
     }
 }
 @media all and (max-width:359px) {
@@ -810,3 +861,39 @@ line-height: normal;
 }
 
 /* -------------------- Progress bar ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* *************************************************************** */
+/* *****************05-view-book pages start*********************** */
+/* *************************************************************** */
+
+
+.flex-box{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+.flex-box .checkbox-here {
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	margin-top: 2px;
+}
+.flex-box .label-text{
+    color: var(--Primary, #203864);
+font-variant-numeric: lining-nums tabular-nums;
+font-family: Gilroy;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
