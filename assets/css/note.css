@@ -177,15 +177,30 @@ margin-left: 15px;
 /* *************************************************************** */
 
 /* --------------------Notepad Section Start ---------------------------- */
-.main-notepad-section{
+.header-right{}
+.header-right .save-button{
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.4px;
+    border-radius: 10px;
+border-bottom: 3px solid var(--Primary-Y, #FFC300);
+background: #314C80;
+padding: 15px 30px;
+}
+.notepad-header-section{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
-.main-notepad-section .left-area{
+
+
+.notepad-header-section .left-header-area{
     flex-basis: 30%;
-}
-.main-notepad-section .left-area .left-header-area{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,7 +209,7 @@ margin-left: 15px;
 background: #FAFAFA;
 }
 
-.main-notepad-section .left-area .left-header-area .description-button{
+.notepad-header-section .left-header-area .description-button{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,7 +218,7 @@ background: #FAFAFA;
     padding: 15px 07px;
     border: none;
 }
-.main-notepad-section .left-area .left-header-area .description-button .btn-text{ 
+.notepad-header-section .left-header-area .description-button .btn-text{ 
     color: #FFF;
     font-family: Gilroy;
     font-size: 14px;
@@ -213,7 +228,12 @@ background: #FAFAFA;
 
  
 }
-.main-notepad-section .left-area .left-header-area .description-button .description-color{
+
+.notepad-header-section .left-header-area .icon-button .icon-image {
+	height: 24px;
+	width: 24px;
+}
+.notepad-header-section .left-header-area .description-button .description-color{
 height: 22px;
 width: 22px;
 border-radius: 50%;
@@ -221,6 +241,101 @@ background:    #EDDBFF;
 display: block;
 margin-right: 7px;
 }
+.notepad-header-section .right-header-area{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 140px;
+    border: 1px solid #EFF3FC;
+    background: #FAFAFA;
+    padding: 11px 14px;
+    margin-left: 31px;
+}
+.line{
+    margin: 0px 15px;
+}
+.line .line-icon{}
+.notepad-header-section .right-header-area .right-header-item{
+
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.notepad-header-section .right-header-area .right-header-item .edit-button{
+    margin: 0px 5px;
+}
+.notepad-header-section .right-header-area .right-header-item .edit-button .edit-icon{
+    height: 24px;
+    width: 24px;
+}
+.notepad-header-section .right-header-area .right-header-item .item-button .item-icon{}
+
+
+.notepad-header-section .right-header-area .right-header-item .color-plate{
+    height: 24px;
+    width: 24px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0px 5px;
+    display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.notepad-header-section .right-header-area .right-header-item .black{
+
+    background: #060807;
+ 
+}
+.notepad-header-section .right-header-area .right-header-item .active-color{
+    border: 0.5px solid #060807;
+    padding: 1px;
+}
+.notepad-header-section .right-header-area .right-header-item .skyblue{
+
+    background: #448CF6;
+ 
+}
+
+.notepad-header-section .right-header-area .right-header-item .red{
+
+    background: #F03E53;
+ 
+}
+
+.notepad-header-section .right-header-area .right-header-item .green{
+
+    background: #6BD174;
+ 
+}
+
+.color-plus{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.notepad-header-section .right-header-area .right-header-item .text-style {
+	margin: 0px 5px;
+}
+
+.notepad-header-section .right-header-area .right-header-item .text-style .style-icon{
+height: 24px;
+width: 24px;
+  
+ 
+}
+
+
+.main-notepad-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.main-notepad-section .left-area{
+    flex-basis: 30%;
+}
+
 
 .main-notepad-section .left-area .left-description-item-area{
     margin-top: 12px;
@@ -274,86 +389,382 @@ line-height: normal;
 }
 .main-notepad-section .right-area{
     flex-basis: 70%;
+    padding-left: 31px;
+
 }
 
-.main-notepad-section .right-area .right-header-item{
-    border-radius: 140px;
-border: 1px solid #EFF3FC;
-background: #FAFAFA;
-padding: 11px 14px;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-}
-.main-notepad-section .right-area .right-header-item .edit-button{
-    margin: 0px 5px;
-}
-.main-notepad-section .right-area .right-header-item .edit-button .edit-icon{
-    height: 24px;
-    width: 24px;
-}
-.main-notepad-section .right-area .right-header-item .item-button .item-icon{}
 
 
-.main-notepad-section .right-area .right-header-item .color-plate{
-    height: 24px;
-    width: 24px;
-    background: #fff;
-    border-radius: 50%;
-    margin: 0px 5px;
+.main-notepad-area{}
+.main-notepad-area .notepad-box-area{
+    border-radius: 20px;
+background: #EDDBFF;
+padding: 32px 17px;
 }
-.main-notepad-section .right-area .right-header-item .black{
-
-    background: #060807;
- 
+.main-notepad-area .notepad-box-area .note-form{}
+.main-notepad-area .notepad-box-area .note-form .form-group{
+    position: relative;
 }
-.main-notepad-section .right-area .right-header-item .active-color{
-    border: 0.5px solid #060807;
-    padding: 1px;
+.main-notepad-area .notepad-box-area .note-form .form-group .input-box {
+	border: none;
+	background: none;
+	color: var(--Grey, #A0A3BD);
+	font-variant-numeric: lining-nums tabular-nums;
+	font-family: Gilroy;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 20px;
+	background: #FFF;
+	padding: 11px 115px 11px 35px;
+	width: 100%;
 }
-.main-notepad-section .right-area .right-header-item .skyblue{
-
-    background: #448CF6;
- 
-}
-
-.main-notepad-section .right-area .right-header-item .red{
-
-    background: #F03E53;
- 
-}
-
-.main-notepad-section .right-area .right-header-item .green{
-
-    background: #6BD174;
- 
-}
-
-.color-plus{
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
+.main-notepad-area .notepad-box-area .note-form .form-group .input-date {
+	color: var(--Grey, #A0A3BD);
+	font-variant-numeric: lining-nums tabular-nums;
+	font-family: Gilroy;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	position: absolute;
+	right: 10px;
+	top: 13px;
 }
 
-.main-notepad-section .right-area .right-header-item .text-style {
-	margin: 0px 5px;
+.main-notepad-area .notepad-box-area .note-form .form-group .text-area{
+    color: var(--Grey, #A0A3BD);
+    font-family: Gilroy;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    resize: none;
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
 }
 
-.main-notepad-section .right-area .right-header-item .text-style .style-icon{
-height: 24px;
-width: 24px;
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .notepad-header-section .left-header-area .description-button {
+        padding: 8px 5px;
+    }
+    .notepad-header-section .left-header-area .description-button .description-color {
+        height: 16px;
+        width: 16px;
+
+        margin-right: 3px;
+    }
+    .notepad-header-section .left-header-area .icon-button .icon-image {
+        height: 16px;
+        width: 16px;
+    }
+    .notepad-header-section .left-header-area .description-button .btn-text {
+
+        font-size: 12px;
+       
+    }
+    .notepad-header-section .right-header-area .right-header-item .color-plate {
+        height: 16px;
+        width: 16px;
+      
+        margin: 0px 3px;
+    }
+    .color-plus {
+        height: 16px;
+        width: 16px;
+        
+    }
+    .notepad-header-section .right-header-area {
+       
+        padding: 11px 0px;
+       
+    }
+    .notepad-header-section .right-header-area .right-header-item .text-style .style-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .notepad-header-section .right-header-area .right-header-item .text-style .style-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .note-text {
+       
+        font-size: 16px;
+      
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .study-notes-name {
+
+        font-size: 15px;
+
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button {
+       
+        padding: 17px 10px;
+      
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .note-date {
+       
+        font-size: 12px;
+       
+    }
+    .main-notepad-area .notepad-box-area .note-form .form-group .input-date {
+        font-size: 15px;
+
+    }
+    .main-notepad-area .notepad-box-area .note-form .form-group .input-box {
+      
+        font-size: 15px;
+
+    }
+    .main-notepad-area .notepad-box-area .note-form .form-group .text-area {
+
+        font-size: 16px;
+
+        margin-top: 30px;
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .note-text {
+       
+        font-size: 16px;
+       
+    }
+   
+}
+
+
+@media all and (max-width:991px) {
+    .notepad-header-section .left-header-area .description-button {
+        padding: 8px 5px;
+    }
+    .notepad-header-section .left-header-area .description-button .description-color {
+        height: 16px;
+        width: 16px;
+
+        margin-right: 3px;
+    }
+    .notepad-header-section .left-header-area .icon-button .icon-image {
+        height: 16px;
+        width: 16px;
+    }
+    .notepad-header-section .left-header-area .description-button .btn-text {
+
+        font-size: 12px;
+       
+    }
+    .notepad-header-section .right-header-area .right-header-item .color-plate {
+        height: 16px;
+        width: 16px;
+      
+        margin: 0px 3px;
+    }
+    .color-plus {
+        height: 16px;
+        width: 16px;
+        
+    }
+    .notepad-header-section .right-header-area {
+       
+        padding: 11px 0px;
+       
+    }
+    .notepad-header-section .right-header-area .right-header-item .text-style .style-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .notepad-header-section .right-header-area .right-header-item .text-style .style-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .notepad-header-section .right-header-area {
+        padding: 5px 0px;
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .study-notes-name {
+
+        font-size: 15px;
+
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button {
+       
+        padding: 17px 10px;
+      
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .note-date {
+       
+        font-size: 12px;
+       
+    }
+    .main-notepad-area .notepad-box-area .note-form .form-group .input-date {
+        font-size: 15px;
+
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .note-date {
+       
+        font-size: 12px;
+       
+    }
+    .main-notepad-area .notepad-box-area .note-form .form-group .input-date {
+        font-size: 15px;
+
+    }
+    .main-notepad-area .notepad-box-area .note-form .form-group .input-box {
+      
+        font-size: 15px;
+
+    }
+    .main-notepad-area .notepad-box-area .note-form .form-group .text-area {
+
+        font-size: 16px;
+
+        margin-top: 30px;
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button .note-text {
+       
+        font-size: 16px;
+       
+    }
+    .header-right .save-button {
+      
+        font-size: 18px;
+      
+        padding: 9px 30px;
+    }
+    .back-arrow .arrow {
   
- 
+        height: 30px;
+        width: 30px;
+    }
 }
 
+@media all and (max-width:767px) {
+    .notepad-header-section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .notepad-header-section .left-header-area {
+        flex-basis: 60%;
+       
+    }
+    .notepad-header-section .right-header-area {
+        flex-basis: 90%;
 
+        margin-left: 0px;
+    }
+    .notepad-header-section .left-header-area .description-button {
+        padding: 10px 10px;
+    }
+    .notepad-header-section .left-header-area .description-button .description-color {
+        height: 20px;
+        width: 20px;
 
+        margin-right: 3px;
+    }
+    .notepad-header-section .left-header-area .icon-button .icon-image {
+        height: 20px;
+        width: 20px;
+    }
+    .notepad-header-section .left-header-area .description-button .btn-text {
 
+        font-size: 14px;
+       
+    }
+    .notepad-header-section .right-header-area .right-header-item .color-plate {
+        height: 20px;
+        width: 20px;
+      
+        margin: 0px 3px;
+    }
+    .color-plus {
+        height: 20px;
+        width: 20px;
+        
+    }
+    .notepad-header-section .right-header-area {
+       
+        padding: 11px 0px;
+       
+    }
+    .notepad-header-section .right-header-area .right-header-item .text-style .style-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .notepad-header-section .right-header-area .right-header-item .text-style .style-icon {
+        height: 20px;
+        width: 20px;
+    }
+    .main-notepad-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .main-notepad-section .left-area {
+        flex-basis: 100%;
+    }
+    .main-notepad-section .right-area {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+    .main-notepad-section .left-area .left-description-item-area .left-description-item .left-description-button {
+        padding: 17px 17px;
+    }
+}
 
+@media all and (max-width:576px) {
+    .notepad-header-section .right-header-area .right-header-item .text-style {
+        margin: 0px 1px;
+    }
+    .notepad-header-section .right-header-area .right-header-item .edit-button {
+        margin: 0px 3px;
+    }
+    .notepad-header-section .right-header-area .right-header-item .color-plate {
+        height: 15px;
+        width: 15px;
+        margin: 0px 3px;
+    }
+    .color-plus {
+        height: 15px;
+        width: 15px;
+    }
+    .notepad-header-section .right-header-area .right-header-item .text-style .style-icon {
+        height: 16px;
+        width: 16px;
+    }
+    .notepad-header-section .right-header-area {
+        padding: 2px 0px;
+    }
+}
 
-
-
-
-
+@media all and (max-width:480px) {
+    .line {
+        margin: 0px 3px;
+    }
+    .line .line-icon {
+        height: 23px;
+    }
+    .notepad-header-section .right-header-area .right-header-item .edit-button .edit-icon {
+        height: 16px;
+        width: 16px;
+    }
+    .notepad-header-section .right-header-area {
+        flex-basis: 100%;
+        margin-left: 0px;
+        justify-content: space-between;
+    }
+    .notepad-header-section .left-header-area {
+        flex-basis: 80%;
+    }
+    .notepad-header-section .left-header-area .icon-button .icon-image {
+        height: 16px;
+        width: 16px;
+    }
+    .main-notepad-area .notepad-box-area .note-form .form-group .text-area {
+      
+        height: 330px;
+  
+    }
+}
 /* --------------------Notepad Section End ---------------------------- */
 
