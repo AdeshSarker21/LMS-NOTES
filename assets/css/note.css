@@ -173,7 +173,7 @@ margin-left: 15px;
 /* --------------------note Section End ---------------------------- */
 
 /* *************************************************************** */
-/* *****************02-view-book pages start*********************** */
+/* *****************02 & 03 view-book pages start*********************** */
 /* *************************************************************** */
 
 /* --------------------Notepad Section Start ---------------------------- */
@@ -768,3 +768,45 @@ padding: 32px 17px;
 }
 /* --------------------Notepad Section End ---------------------------- */
 
+
+/* *************************************************************** */
+/* *****************04-view-book pages start*********************** */
+/* *************************************************************** */
+
+/* -------------------- Progress bar ---------------------------- */
+.flexbox{
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.progress {
+	flex-basis: 80%;
+	height: 8px;
+}
+.progress .progress-bar{
+  
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	color: var(--bs-progress-bar-color);
+	text-align: center;
+	white-space: nowrap;
+	background-color: #FFC300;
+	transition: var(--bs-progress-bar-transition);
+    border-radius: 35px;
+}
+.progress .progress-text{
+    flex-basis: 20%;
+color: var(--FONT-COLOR, #364E79);
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.progress-bar {
+	
+}
+
+/* -------------------- Progress bar ---------------------------- */
