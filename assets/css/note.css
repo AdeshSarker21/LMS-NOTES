@@ -275,5 +275,85 @@ line-height: normal;
 .main-notepad-section .right-area{
     flex-basis: 70%;
 }
+
+.main-notepad-section .right-area .right-header-item{
+    border-radius: 140px;
+border: 1px solid #EFF3FC;
+background: #FAFAFA;
+padding: 11px 14px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.main-notepad-section .right-area .right-header-item .edit-button{
+    margin: 0px 5px;
+}
+.main-notepad-section .right-area .right-header-item .edit-button .edit-icon{
+    height: 24px;
+    width: 24px;
+}
+.main-notepad-section .right-area .right-header-item .item-button .item-icon{}
+
+
+.main-notepad-section .right-area .right-header-item .color-plate{
+    height: 24px;
+    width: 24px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.main-notepad-section .right-area .right-header-item .black{
+
+    background: #060807;
+ 
+}
+.main-notepad-section .right-area .right-header-item .active-color{
+    border: 0.5px solid #060807;
+    padding: 1px;
+}
+.main-notepad-section .right-area .right-header-item .skyblue{
+
+    background: #448CF6;
+ 
+}
+
+.main-notepad-section .right-area .right-header-item .red{
+
+    background: #F03E53;
+ 
+}
+
+.main-notepad-section .right-area .right-header-item .green{
+
+    background: #6BD174;
+ 
+}
+
+.color-plus{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.main-notepad-section .right-area .right-header-item .text-style {
+	margin: 0px 5px;
+}
+
+.main-notepad-section .right-area .right-header-item .text-style .style-icon{
+height: 24px;
+width: 24px;
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
 /* --------------------Notepad Section End ---------------------------- */
 
