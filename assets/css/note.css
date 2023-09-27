@@ -190,6 +190,8 @@ margin-left: 15px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    border-radius: 140px;
+background: #FAFAFA;
 }
 
 .main-notepad-section .left-area .left-header-area .description-button{
